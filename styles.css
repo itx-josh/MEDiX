@@ -1,0 +1,156 @@
+@font-face{
+    src: url(fonts/Poppins-Regular);
+    font-family: poppins;
+}
+*{
+    font-family: poppins;
+}
+p{
+    font-size: 18px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0px;
+    box-sizing: border-box;
+}
+.home{
+    height: 100vh;
+    width: 100vw;
+}
+.home-flex{
+    object-fit: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/Simple\ Shiny.svg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+
+.mynav{
+    background-color: rgb(12, 12, 12);
+}
+.mycarousel{
+    background-color: rgb(221, 221, 221);
+    border-radius: 15px;
+    padding: 15px 20px;
+}
+
+/* .navbar{
+    transition: all 0.5s;
+} */
+/* .iphone{
+    height: 500px;
+    justify-content: end;
+    display: flex;
+    flex-direction: column;
+}
+
+.iphone img{
+    height: 100%;
+    width: 100%;
+    display: none;
+} */
+
+.features div img{
+    width: 100%;
+    
+    border-radius: 15px;
+}
+
+
+.icon a img{
+    width: 25px;
+    height: auto;
+}
+
+.accordion-bg{
+    background-color: rgb(221, 221, 221);
+}
+.carousel-img{
+    object-fit: cover;
+    max-width: 400px;
+}
+.carousel-text{
+    text-align: start;
+    align-self: center;
+}
+
+.back-to-top{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.download{
+    background-image: url(images/Simple\ Shiny.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.download-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.link-img a img{
+    width: 200px;
+    transform: 2s;
+}
+
+.link-img a img:hover{
+    width: 210px;
+}
+
+@media only screen and (max-width:1022px){
+.hero-image img{
+    display: none;
+}
+
+}
+
+
+@media only screen and (min-width:1023px){
+    /* .mycarousel{
+        max-height: 400px;
+    }
+    .features div img{
+        width: 100%;
+        
+        border-radius: 15px;
+    } */
+    
+    .hero-image{
+        max-width: 30vw;
+    }
+    .hero-image img{
+        width: 100%;
+        height: auto;
+    }
+    .texts{
+        flex: 1;
+
+    }
+}
