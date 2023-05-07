@@ -2,8 +2,11 @@
     src: url(fonts/Poppins-Regular);
     font-family: poppins;
 }
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 *{
-    font-family: poppins;
+    font-family:'Poppins', sans-serif;
 }
 p{
     font-size: 18px;
