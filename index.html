@@ -5,24 +5,35 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MEDiX web</title>
+  <title>MediConnect</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="icon" href="images/web-icon.png" type="image/png">
+  <link rel="icon" href="images/icon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="loading.css">
 
 </head>
 
 <body>
+  <!-- loading screen -->
+  <div id="loading-screen">
+    <p id="loading-message">Loading, please wait...</p> <br>
+    <div class="text-center d-block">
+      <div class="spinner-border" style="width: 3rem; height: 3rem; color: white;" role="status">
+      </div>
+    </div>
+  </div>
+  <!-- loading screen end -->
   <a href="#" class=""><i class="fa-solid fa-arrow-up back-to-top" style="color: #ffffff;"></i></a>
-  <nav class="navbar navbar-expand-sm navbar-dark ">
+  <nav class="navbar navbar-expand-md navbar-dark ">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#">MEDiX </a>
+      <a class="navbar-brand fw-bold" href="#">MediConnect </a>
       <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
         data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -50,6 +61,7 @@
       </div>
     </div>
   </nav>
+
   <section class="home">
     <div class="home-flex px-lg-3">
       <!-- <h1 class="text-light mb-5">Logo</h1>
@@ -66,15 +78,21 @@
              <button class="btn btn-light align-content-center">Try it for free</button>
         </div>  -->
       <div class="px-4 py-5 my-2 text-center texts">
-        <h1 class="display-5 fw-bold text-light animate__animated animate__fadeInUp">QUALITY CARE AND PRODUCTS YOU CAN
-          TRUST</h1>
+        <h1 class="text-center text-warning fw-bold display-5">
+          MediConnect
+        </h1>
+        <h2 class="display-4 fw-bold text-light animate__animated animate__fadeInUp">QUALITY CARE AND PRODUCTS YOU CAN
+          TRUST</h2>
         <div class="col-lg-6 mx-auto">
           <p class="lead mb-4 text-light">we are committed to providing our customers
             with exceptional service, expert advice and
             the highest quality products.</p>
           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <a href="#download" class="btn btn-light btn-lg px-4 gap-3 mybtn">7 Days free trial</a>
-            <a href="#learn.html" class="btn btn-outline-light btn-lg px-4 mybtn">learn more</a>
+            <a href="#download" class="btn btn-light btn-lg px-4 gap-3 mybtn">
+                Try it for free
+            </a>
+
+            <a href="#about" class="btn btn-outline-light btn-lg px-4 mybtn">learn more</a>
           </div>
         </div>
       </div>
@@ -95,15 +113,17 @@
         <img src="images/IMG_9896.WEBP" alt="">
       </div>
       <div class="text col-lg-6">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum illum ipsam nihil laboriosam itaque similique
-        accusamus tenetur autem sapiente perferendis placeat ipsa, nostrum beatae temporibus labore, magni doloribus qui
-        tempore? Omnis, temporibus! Error reiciendis quod optio corrupti! Doloremque neque veniam temporibus minus
-        corporis, perferendis voluptatem incidunt quidem aliquid sunt recusandae. Lorem ipsum dolor sit, amet
-        consectetur adipisicing elit. Ipsam dolore repellat, temporibus aliquam voluptates
-        <br>
-        <button class="btn btn-primary m-3">
-          Get started
-        </button>
+        <h5 class="text-center">Introducing MediConnect: Your Personal Health Companion</h5>
+        MediConnect is a comprehensive mobile application designed to help you manage your health and medication
+        routines effectively. With its user-friendly interface and powerful features, MediConnect simplifies the process
+        of setting medication reminders, connecting with healthcare professionals, booking appointments, accessing
+        pharmacies, and searching for valuable health information.
+        <br><a href="#download">
+          <button class="btn btn-primary m-3">
+            Get started
+          </button>
+        </a>
+
       </div>
     </div>
 
@@ -124,8 +144,9 @@
               <img src="images/IMG_9894.WEBP" alt="">
             </div>
             <div class="text col-md-4 carousel-text">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum illum ipsam nihil laboriosam itaque
-              similique accusamus tenetur autem sapiente perferendis placeat ipsa, nostrum beatae temporibus
+              Doctor Communication: Stay connected with your healthcare team effortlessly. MediConnect allows you to
+              securely message your doctors, nurses, or other healthcare professionals directly within the app. You can
+              discuss concerns, ask questions, or share updates, promoting seamless communication for better care.
             </div>
           </div>
         </div>
@@ -135,8 +156,9 @@
               <img src="images/IMG_9896.WEBP" alt="">
             </div>
             <div class="text col-md-4 carousel-text">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum illum ipsam nihil laboriosam itaque
-              similique accusamus tenetur autem sapiente perferendis placeat ipsa, nostrum beatae temporibus
+              Medication Reminders: Never miss a dose again! MediConnect enables you to set personalized reminders for
+              taking your medications at the right time. With customizable options, you can schedule reminders for
+              multiple medications, ensuring you stay on track with your treatment plan.
             </div>
           </div>
         </div>
@@ -146,8 +168,10 @@
               <img src="images/66161.jpg" alt="">
             </div>
             <div class="text col-md-4 carousel-text">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum illum ipsam nihil laboriosam itaque
-              similique accusamus tenetur autem sapiente perferendis placeat ipsa, nostrum beatae temporibus
+              Pharmacy Integration: Connect with your preferred pharmacy with just a few taps. MediConnect offers
+              integration with local pharmacies, allowing you to order medication refills, check prescription statuses,
+              and receive notifications when your medications are ready for pickup or delivery. Never worry about
+              running out of important medications again.
             </div>
           </div>
         </div>
@@ -188,16 +212,14 @@
         <h2 class="accordion-header">
           <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
             aria-expanded="true" aria-controls="collapseOne">
-            How will this app help you?
+            is this app safe?
           </button>
         </h2>
         <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
           <div class="accordion-body accordion-bg">
-            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin
-            adds the appropriate classes that we use to style each element. These classes control the overall
-            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
-            CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the ,
-            though the transition does limit overflow.
+            <strong>In terms of security, </strong>MediConnect takes your privacy and security seriously. Your personal
+            health information is encrypted and stored securely. The app complies with strict privacy regulations to
+            ensure the confidentiality of your data.
           </div>
         </div>
       </div>
@@ -210,11 +232,9 @@
         </h2>
         <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
           <div class="accordion-body accordion-bg">
-            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
-            plugin adds the appropriate classes that we use to style each element. These classes control the overall
-            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
-            CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the ,
-            though the transition does limit overflow.
+            <strong>the answer is you do.</strong> Whether you're managing a complex medication regimen or simply
+            looking for a convenient way to stay connected with your healthcare providers, MediConnect is your
+            all-in-one solution. Download the app today and empower yourself to take control of your health journey
           </div>
         </div>
       </div>
@@ -222,16 +242,48 @@
         <h2 class="accordion-header">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            How reliable is this app?
+            Can I communicate directly with my doctors through MediConnect?
           </button>
         </h2>
         <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
           <div class="accordion-body accordion-bg">
-            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin
-            adds the appropriate classes that we use to style each element. These classes control the overall
-            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
-            CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the,
-            though the transition does limit overflow.
+            <strong>Absolutely!</strong> MediConnect allows you to securely message your doctors and healthcare
+            professionals. Simply go to the "Doctor Communication" feature within the app, select the healthcare
+            provider you wish to contact, and compose your message. You can discuss concerns, ask questions, or share
+            updates conveniently and confidentially.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            Is the health information provided in MediConnect reliable?
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body accordion-bg">
+            <strong>Definately.</strong> The health information available in MediConnect is sourced from reputable
+            medical resources and reviewed by healthcare professionals. The app provides access to a vast database of
+            reliable and up-to-date health information, empowering you to make informed decisions about your well-being.
+            However, always consult with your healthcare provider for personalized advice.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            How secure is my personal health information in MediConnect?
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body accordion-bg">
+            At MediConnect, the privacy and security of your personal health information are of utmost importance. The
+            app uses encryption and secure storage measures to protect your data. It adheres to strict privacy
+            regulations and best practices to ensure the confidentiality and integrity of your information.
           </div>
         </div>
       </div>
@@ -243,33 +295,38 @@
       <div class="row align-items-center g-lg-5 py-5">
         <div class="text-center ">
           <h1 class="display-4 fw-bold lh-1 mb-3">Let's get in touch</h1>
-
+          <p class="col-lg-10 fs-6">If you have any additional questions or concerns, please don't hesitate to reach
+            out. We'd love to hear from you. Fill out the form below and we'll get back to you as soon as possible.</p>
         </div>
         <div class="col-md-10 mx-auto col-lg-5">
-          <form class="p-4 p-md-5 border rounded-3 bg-light"> 
+          <form class="p-4 p-md-5 border rounded-3 bg-light">
             <div class="form-floating mb-3">
-              <input type="text" class="form-control" id="floatingInput" placeholder="Your name">
+              <input type="text" class="form-control" id="floatingInput" placeholder="Your name" required>
               <label for="floatingInput">Your name</label>
             </div>
             <div class="form-floating mb-3">
-              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
               <label for="floatingInput">Email address</label>
             </div>
-            <div class="form-floating mb-3">
-              <input type="tel" class="form-control" id="floatingInput" placeholder="Phone number">
+            <div class="form-floating mb-2">
+              <input type="tel" class="form-control" id="floatingInput" placeholder="Phone number" required>
               <label for="floatingPassword">Phone number</label>
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label"></label>
+              <textarea class="form-control" name="" id="" placeholder="Write something..." rows="3"
+                required></textarea>
             </div>
 
 
             <button class="w-100 btn btn-lg btn-primary" type="submit">Submit</button>
             <hr class="my-4">
-            <small class="text-muted">Submit and receive updates about the app straight to your Email.</small>
+            <small class="text-muted">Submit and you will receive a responce straight to your Email.</small>
           </form>
         </div>
       </div>
     </div>
   </section>
-
 
 
   <footer>
@@ -285,10 +342,10 @@
         </div>
 
         <ul class="nav  justify-content-center list-unstyled d-flex">
-          <li class="ms-3 icon"><a href="Mytwitter"><img src="images/twitter.png" alt="twitter"></a></li>
+          <li class="ms-3 icon"><a href="https://twitter.com/itx_josh_"><img src="images/twitter.png" alt="twitter"></a></li>
           <li class="ms-3 icon"><a href="Myig"><img src="images/instagram.png"></a></li>
           <li class="ms-3 icon"><a href="#"><img src="images/linkedin.png" alt="linkedin"></a></li>
-          <li class="ms-3 icon"><a href="#"><img src="images/github.png" alt="github"></a></li>
+          <li class="ms-3 icon"><a href="https://github.com/itx-josh"><img src="images/github.png" alt="github"></a></li>
         </ul>
       </footer>
     </div>
@@ -298,11 +355,14 @@
 
 
   <script src="js/bootstrap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
   <script src="mynav.js"></script>
   <script src="top.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" defer></script>
-  <script src="animations.js"defer></script>
+  <script src="animations.js" defer></script>
+  <script src="loading.js"></script>
 
 
 </body>
